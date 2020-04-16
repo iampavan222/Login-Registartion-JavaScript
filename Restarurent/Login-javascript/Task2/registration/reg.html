@@ -1,0 +1,127 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+    <title>Restaurent Registration</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="upload.js"></script>
+     <script src="Image.js"></script>    
+ </head>
+ 
+	<body class="body-top">
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		  <div class="header-top">
+			<div class="container">
+			  <h1 class="header-text">Restaurent Services</h1>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Registration Form</a>
+			</div>
+			<div class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li><a href="#about"><span class="glyphicon glyphicon-info-status"></span> STATUS</a></li>
+				<li><a href="#contact"><span class="glyphicon glyphicon-logout"></span> LOGOUT</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+			<div class="form-reg">
+				<form>
+					<div class="form-group">
+						<div class="form-label">First Name :-</div>
+						<div class="form-input">
+							<input type="text" name="firstname" id="firstname">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="form-label">Last Name :-</div>
+						<div class="form-input">
+							<input type="text" name="firstname" id="firstname">
+						</div>
+                    </div>
+                    
+                    <div class="form-group">
+						<div class="form-label">Address :-</div>
+						<div class="form-input">
+							<textarea></textarea>
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<div class="form-label">Contact Number :-</div>
+						<div class="form-input">
+							<input type="text" name="firstname" id="firstname">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="form-label">Rating :-</div>
+						<div class="form-input">
+							<input type="Password" name="firstname" id="firstname">
+						</div>
+                    </div>
+                    
+                    <div class="form-group">
+						<div class="form-label">ID Number :-</div>
+						<div class="form-input">
+							<input type="Password" name="firstname" id="firstname">
+						</div>
+                    </div>
+
+                    <div class="form-group">
+						<div class="form-label">ID Type :-</div>
+						<div class="form-input">
+							<select>
+								<option selected="">ID Type</option>
+								<option value="Manager">Manager</option>
+                                <option value="Receptionist">Receptionist</option>
+                                <option value="Cheff">Cheff</option>
+                                <option value="Servent">Servent</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+					  <div class="">Photo :-
+						   <div class="image-preview" id="imagePreview">
+							 <img src="" alt="Image Preview" class="image-preview__image">
+							 <span class="image-preview__default-text">Take Image </span>
+						    </div>
+						 <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                         <p><label for="file btn btn-primary" style="cursor: pointer;">Upload Image</label></p>
+						 <p><img id="output" width="200" /></p>
+						</div>
+					</div>
+						
+					<div class="bottom-footer">
+						<button type="reset">Back</button>
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+
+			</div>
+	</div>
+	
+</html>
+    </body>
